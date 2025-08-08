@@ -6,7 +6,7 @@ body {
   font-family: "Encode Sans", sans-serif;
   min-width: 320px;
   min-height: 100vh;
-  background-color: olivedrab;
+  background-color: rgb(73, 138, 78);
 }
 
 label {
@@ -43,4 +43,23 @@ button:focus-visible {
 
 #display {
   text-align: center;
+}
+
+.train-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+  position: absolute;
+  top: 500px;
+  left: -100px;
+  animation: moveTrain 10s linear infinite;
+}
+
+@keyframes moveTrain {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
 }
