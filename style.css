@@ -7,6 +7,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: rgb(73, 138, 78);
+  /* background-image: url("https://ambitious-bay-086868110.2.azurestaticapps.net/"); */
 }
 
 label {
@@ -39,6 +40,28 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #603813 0%, #b29f94 51%, #603813 100%);
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 #display {
